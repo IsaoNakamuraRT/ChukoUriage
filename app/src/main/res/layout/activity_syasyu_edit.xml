@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SyasyuEditActivity">
+
+    <!-- タイトル -->
+    <TextView
+        android:id="@+id/tvTitleEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="車種編集"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 車種名 -->
+    <EditText
+        android:id="@+id/etSyasyuEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="車種名"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 単価 -->
+    <EditText
+        android:id="@+id/etTankaEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="単価（数字）"
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toBottomOf="@id/etSyasyuEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 更新ボタン -->
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="更新"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toBottomOf="@id/etTankaEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 削除ボタン -->
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="削除"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toBottomOf="@id/btnUpdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- キャンセルボタン -->
+    <Button
+        android:id="@+id/btnCancelEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="キャンセル"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toBottomOf="@id/btnDelete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

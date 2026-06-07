@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ChukoUriage_2026_01</string>
+    <string-array name="支店">
+        <item>札幌</item>
+        <item>仙台</item>
+        <item>茨城</item>
+        <item>東京</item>
+        <item>名古屋</item>
+        <item>大阪</item>
+        <item>広島</item>
+        <item>福岡</item>
+    </string-array>
+    <string-array name="車種">
+        <item>プリウス</item>
+        <item>クラウン</item>
+        <item>マークⅡ</item>
+
+    </string-array>
+
+    <string name="title_text">中古車売上管理</string>
+    <string name="btn_register">登録</string>
+    <string name="btn_count">売上台数</string>
+    <string name="btn_total">総売上</string>
+    <string name="btn_delete">削除</string>
+    <string name="btn_all_data">全データ表示</string>
+    <string name="btn_branch_type_total">支店毎、車種毎の合計</string>
+    <string name="btn_type_total">車種毎の合計</string>
+    <string name="label_branch">支店：</string>
+    <string name="label_type">車種：</string>
+</resources>
